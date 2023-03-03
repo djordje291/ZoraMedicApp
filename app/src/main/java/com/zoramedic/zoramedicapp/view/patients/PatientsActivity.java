@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.zoramedic.zoramedicapp.R;
 import com.zoramedic.zoramedicapp.data.Patient;
 import com.zoramedic.zoramedicapp.data.Pharmacy;
+import com.zoramedic.zoramedicapp.data.User;
 import com.zoramedic.zoramedicapp.data.UserMe;
 import com.zoramedic.zoramedicapp.databinding.ActivityPatientsBinding;
 import com.zoramedic.zoramedicapp.ui.ItemTouchHelperEdit;
@@ -55,6 +56,7 @@ public class PatientsActivity extends InternetActivity implements SearchView.OnQ
         binding = ActivityPatientsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.setUser(UserMe.getInstance());
         loading(true);
 
         databaseViewModel = new ViewModelProvider(this).get(DatabaseViewModel.class);
