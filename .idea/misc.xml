@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_background_content_top.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_background_input.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_background_received_message.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_background_sent_message.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_edittext.xml" value="0.2585" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_message_received.xml" value="0.2585" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/chat_message_sent.xml" value="0.2585" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/cursor_color.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/delete_background.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/divider.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/edit_background.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/edit_background_patient.xml" value="0.2595" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/home_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/home_button_low.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_add.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_add_white.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_baseline_lock_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_check.xml" value="0.2095" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_cloud_download.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_cloud_off.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_delete.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_edit.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_lock_focused.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_lock_selected.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_money.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_person_focused.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_person_selected.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_pharmacy.xml" value="0.178" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_remove.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_search.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/ic_send.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/login_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/login_edittext.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/login_password_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/login_username_icon.xml" value="0.3828125" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/note_backgound.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/note_background.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/patient_background_button.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/pharmacy_backgound.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/pharmacy_background.xml" value="0.3675" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/pharmacy_background_low.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/pharmacy_new_background_input.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/saturation_dialog_background.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/drawable/saturation_dialog_button_background.xml" value="0.3665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout-w1240dp/activity_login.xml" value="0.23560910307898258" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout-w936dp/activity_login.xml" value="0.275" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_chat.xml" value="0.25" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_chat_card_received.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_chat_card_sent.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_home.xml" value="0.25" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_new_note.xml" value="0.25" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_new_patient.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_notes.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_notes_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_patients.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_patients_home_card.xml" value="0.5" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_pharmacy.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_pharmacy_card.xml" value="0.33" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_selected_patient.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_selected_patientt.xml" value="0.365625" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/activity_service.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/bill_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/bill_date_range_picker.xml" value="0.365625" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/blood_pressure_card.xml" value="0.33" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/blood_pressure_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/fragment_bill_list.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/medical_history_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/pharmacy_added_card.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/pharmacy_dialog.xml" value="0.33" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/pharmacy_list_card.xml" value="0.33" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/saturation_dialog.xml" value="0.365625" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/layout/single_chip_layout.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/menu/home_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/menu/pharmacy_menu.xml" value="0.29444444444444445" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/menu/selected_patient_menu.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.22135416666666666" />
+        <entry key="..\:/Users/djord/OneDrive/Android/Projects/ZoraMedicApp/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3828125" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

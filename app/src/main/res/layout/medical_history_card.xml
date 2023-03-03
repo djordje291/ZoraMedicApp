@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="service"
+            type="com.zoramedic.zoramedicapp.data.Service" />
+        <variable
+            name="user"
+            type="com.zoramedic.zoramedicapp.data.User" />
+        <variable
+            name="userMe"
+            type="com.zoramedic.zoramedicapp.data.UserMe" />
+        <variable
+            name="activity"
+            type="com.zoramedic.zoramedicapp.view.patients.SelectedPatientActivity" />
+        <import type="android.view.View"/>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/dateAndTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:text="@{service.dateAndTime()}"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/creator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:text="@{user.firstName + ` ` + user.lastName}"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/billTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{service.bill.title}"
+            android:textSize="@dimen/_17ssp"
+            android:textColor="@color/dark_purple"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dateAndTime" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:visibility="@{service.description != null ? View.VISIBLE : View.GONE}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:gravity="center"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/pink"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/billTitle" />
+
+        <TextView
+            android:id="@+id/description"
+            android:visibility="@{service.description != null ? View.VISIBLE : View.GONE}"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@{service.description}"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/tv2"
+            android:visibility="@{service.pharmacyList != null &amp;&amp; service.pharmacyList.size() > 0 ? View.VISIBLE : View.GONE}"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/pharmacy_list"
+            android:textSize="@dimen/_11ssp"
+            android:textColor="@color/pink"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/description" />
+
+        <TextView
+            android:id="@+id/pharmacyList"
+            android:visibility="@{service.pharmacyList != null &amp;&amp; service.pharmacyList.size() > 0 ? View.VISIBLE : View.GONE}"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@{service.pharmacyListFormatted}"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/_13ssp"
+            android:gravity="center"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv2" />
+
+
+        <ImageButton
+            android:visibility="@{service.creatorID.equals(userMe.userFirebaseID) || userMe.clearanceLvl > 0 ? View.VISIBLE : View.GONE}"
+            android:id="@+id/deleteButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:onClick="@{() -> activity.deleteMedicalHistory(service)}"
+            android:background="@drawable/ic_delete"
+            android:backgroundTint="@color/pink"
+            app:layout_constraintTop_toBottomOf="@id/pharmacyList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageButton
+            android:visibility="@{service.creatorID.equals(userMe.userFirebaseID) || userMe.clearanceLvl > 0 ? View.VISIBLE : View.GONE}"
+            android:id="@+id/editButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:onClick="@{() -> activity.editMedicalHistory(service)}"
+            android:background="@drawable/ic_edit"
+            android:backgroundTint="@color/pink"
+            app:layout_constraintTop_toBottomOf="@id/pharmacyList"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:background="@color/pink"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/deleteButton" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/wordDoc"
+        android:icon="@drawable/ic_cloud_download"
+        android:iconTint="@color/white"
+        android:title="@string/download_word_document"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/bill"
+        android:icon="@drawable/ic_money"
+        android:iconTint="@color/white"
+        android:title="@string/create_pdf_bill"
+        app:showAsAction="ifRoom" />
+</menu>

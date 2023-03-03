@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "79166905289",
+    "project_id": "zoramedicapp",
+    "storage_bucket": "zoramedicapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:79166905289:android:086145bf8bcd1863cf6618",
+        "android_client_info": {
+          "package_name": "com.zoramedic.zoramedicapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "79166905289-stevgjkga6tajsp92l2rfu8umikamo9g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUuayso25_dCX08hfd3E-fkvISsGKfw3o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "79166905289-stevgjkga6tajsp92l2rfu8umikamo9g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

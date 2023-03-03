@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="saturation"
+            type="com.zoramedic.zoramedicapp.data.Saturation" />
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:padding="@dimen/_8sdp"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/percentage"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:inputType="number"
+            android:background="@drawable/saturation_dialog_background"
+            android:text="@{Integer.toString(saturation.percentage)}"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_25ssp"
+            android:gravity="top|center"
+            android:paddingTop="@dimen/_24sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/plus"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_add"
+            app:tint="@color/white"
+            android:background="@drawable/saturation_dialog_button_background"
+            app:layout_constraintEnd_toEndOf="@+id/percentage"
+            app:layout_constraintBottom_toBottomOf="@+id/percentage"/>
+
+        <ImageButton
+            android:id="@+id/minus"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:src="@drawable/ic_remove"
+            app:tint="@color/white"
+            android:background="@drawable/saturation_dialog_button_background"
+            app:layout_constraintStart_toStartOf="@+id/percentage"
+            app:layout_constraintBottom_toBottomOf="@+id/percentage"
+             />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

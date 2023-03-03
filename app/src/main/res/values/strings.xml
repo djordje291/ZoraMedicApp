@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">ZoraMedic</string>
+    <string name="title_activity_login" translatable="false">LoginActivity</string>
+    <string name="prompt_email" translatable="false">Email</string>
+    <string name="prompt_password" translatable="false">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed : "</string>
+    <string name="login">Login</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="email" translatable="false">email</string>
+    <string name="logout">Logout</string>
+    <string name="user_logged_out">User logged out</string>
+    <string name="login_warning">Please fill in all the fields</string>
+    <string name="patients">Patients</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="notes">Notes</string>
+    <string name="pharmacy">Pharmacy</string>
+    <string name="chat">chat</string>
+    <string name="userID" translatable="false">userID</string>
+    <string name="firstName" translatable="false">firstName</string>
+    <string name="lastName" translatable="false">lastName</string>
+    <string name="clearanceLvl" translatable="false">clearanceLvl</string>
+    <string name="no_internet">No internet connection</string>
+    <string name="search">Search</string>
+    <string name="dummy_pharmacy_name" translatable="false">Dummy name 50mg</string>
+    <string name="dummy_number" translatable="false">83</string>
+    <string name="pol" translatable="false">pol</string>
+    <string name="godine" translatable="false">godine</string>
+    <string name="title">Title</string>
+    <string name="all">ALL</string>
+    <string name="type_here">Type here...</string>
+    <string name="select_people_to_notify">Select people to notify</string>
+    <string name="note_deleted">Note deleted</string>
+    <string name="minimal_limit">Minimal Limit</string>
+    <string name="quantity">Quantity</string>
+    <string name="pharmacy_empty">Pharmacy Empty</string>
+    <string name="minimal_is">Minimal is</string>
+    <string name="in_stock">In stock</string>
+    <string name="low_in_stock">Low In Stock</string>
+    <string name="chat_empty">Chat empty</string>
+    <string name="type">Type...</string>
+    <string name="min" translatable="false">min</string>
+    <string name="empty_notes">Empty Notes</string>
+    <string name="no_patients">No patients</string>
+    <string name="empty_patients">Empty Patients</string>
+    <string name="gender">Gender</string>
+    <string name="age">Age</string>
+    <string name="room">Room</string>
+    <string name="blood_type">Blood Type</string>
+    <string name="additional_information">Additional Information</string>
+    <string name="blood_pressure_history">Blood Pressure History</string>
+    <string name="blood_pressure">Blood Pressure</string>
+    <string name="weight">Weight</string>
+    <string name="height">Height</string>
+    <string name="birthday">Birthday</string>
+    <string name="download_word_document">Download Word Document</string>
+    <string name="create_pdf_bill">create PDF bill</string>
+    <string name="name">Name</string>
+    <string name="address">Address</string>
+    <string name="jmbg" translatable="false">JMBG</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="systolic">Systolic</string>
+    <string name="diastolic">Diastolic</string>
+    <string name="pulse">Pulse</string>
+    <string name="description_optional">Description (optional)</string>
+    <string name="add_pharmacy">Add Pharmacy</string>
+    <string name="add_service">Add Service</string>
+    <string name="max" translatable="false">max</string>
+    <string name="_0" translatable="false">0</string>
+    <string name="pharmacy_list">Pharmacy List</string>
+    <string name="description">Description</string>
+    <string name="added">Added</string>
+    <string name="pharmacy_is_removed">Pharmacy is removed</string>
+    <string name="pharmacy_is_restored">Pharmacy is restored!</string>
+    <string name="cant_go_lower">Can\'t go lower</string>
+    <string name="fill_in_all_the_fields">Fill in all the fields</string>
+    <string name="fill_in_the_note">Fill in the note</string>
+    <string name="no_more_in_stock">No more in stock</string>
+    <string name="fill_in_the_name">Fill in the name</string>
+    <string name="file_selected">File selected</string>
+    <string name="file_not_selected">File not selected</string>
+    <string name="no_file">No File</string>
+    <string name="deleted">Deleted</string>
+    <string name="logged_in">Logged in</string>
+    <string name="not_logged_in">Not logged in</string>
+    <string name="add_patient">Add patient</string>
+    <string name="upload_word_document">Upload Word Document</string>
+    <string name="word_document_uploaded">Word Document Uploaded</string>
+    <string name="no_blood_pressure_history">No Blood Pressure History</string>
+    <string name="no_medical_history">No Medical History</string>
+    <string name="add_note">Add Note</string>
+    <string name="there_is_at_least_one_pharmacy_with_0">There is at least one pharmacy with 0 quantity</string>
+    <string name="patient_is_removed">Patient is removed</string>
+    <string name="patient_is_restored">Patient is restored</string>
+    <string name="are_you_sure_you_want_to_delete">Are you sure you want to delete </string>
+    <string name="delete">Delete</string>
+    <string name="cancel">Cancel</string>
+    <string name="jmbg_has_to_have_13_digits">JMBG has to have 13 digits</string>
+    <string name="service_name">Service name</string>
+    <string name="total">Total</string>
+    <string name="price">Price</string>
+    <string name="grand_total">Grand total</string>
+    <!--    ovo dole da bude: Specifikacija troškova za-->
+    <string name="service_invoice_for">Service invoice for</string>
+    <!--    ovo dole da bude: Datum i Mesto:                           Odgovorno lice:-->
+    <string name="date_place_responsible_person">Date and Place:                           Responsible person:</string>
+    <string name="naziv_usluge_leka" translatable="false">Naziv usluge/leka</string>
+    <string name="cena" translatable="false">Cena</string>
+    <string name="kolicina" translatable="false">Količina</string>
+    <string name="ukupno" translatable="false">Ukupno</string>
+    <string name="konacan_racun" translatable="false">Konačan račun</string>
+    <string name="specifikacija_troskova_za" translatable="false">Specifikacija troškova za</string>
+    <string name="din" translatable="false">din</string>
+    <string name="naziv_leka" translatable="false">Naziv leka</string>
+    <string name="coma00" translatable="false">,00</string>
+    <string name="doo" translatable="false">do</string>
+    <string name="od" translatable="false">od</string>
+    <string name="pocetni_word" translatable="false">pocetni word"</string>
+    <string name="per_os_th" translatable="false">Per Os TH</string>
+    <string name="parenteralna_th" translatable="false">Parenteralna TH</string>
+    <string name="update">Update</string>
+    <string name="its_already_100">It\'s already 100%</string>
+    <string name="its_already_0">It\'s already 0%</string>
+    <string name="patient">patient</string>
+    <string name="oxygen_saturation">Oxygen saturation</string>
+    <string name="failed_to_logout">Failed to logout</string>
+    <string name="seconds">seconds</string>
+    <string name="minute">minute</string>
+    <string name="minutes">minutes</string>
+    <string name="hour">hour</string>
+    <string name="hours">hours</string>
+    <string name="day">day</string>
+    <string name="days">days</string>
+    <string name="ago">ago</string>
+    <string name="doc" translatable="false">.doc</string>
+    <string name="undo">undo</string>
+    <string name="add">add</string>
+    <string name="medical_history">Medical History</string>
+    <string name="not_added">Not added</string>
+    <string name="not_updated">Not updated</string>
+    <string name="not_added_word_document">Not added Word Document</string>
+    <string name="delete_failed">Delete failed</string>
+    <string name="message_failed_to_send">Message failed to send</string>
+    <string name="failed_to_send_notification">Failed to send notification</string>
+    <string name="seen_by">Seen by:</string>
+    <string name="in_chat">In chat:</string>
+</resources>

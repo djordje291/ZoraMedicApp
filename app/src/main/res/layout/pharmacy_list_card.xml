@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="pharmacy"
+            type="com.zoramedic.zoramedicapp.data.Pharmacy" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/pharmacyName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:text="@{pharmacy.name}"
+            android:textColor="@color/dark_purple"
+            android:textSize="@dimen/_17ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/maxQuantity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@{Integer.toString(pharmacy.quantity)}"
+            android:gravity="center"
+            android:paddingStart="@dimen/_16sdp"
+            android:paddingTop="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_16sdp"
+            android:paddingBottom="@dimen/_8sdp"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintStart_toStartOf="@id/pharmacyName"
+            app:layout_constraintEnd_toEndOf="@+id/pharmacyName"
+            app:layout_constraintTop_toBottomOf="@+id/pharmacyName" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

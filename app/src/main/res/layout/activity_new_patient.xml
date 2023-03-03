@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="patient"
+            type="com.zoramedic.zoramedicapp.data.Patient" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.patients.NewPatientActivity">
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_marginBottom="@dimen/_12sdp"
+            android:backgroundTint="@color/dark_purple"
+            android:text="@string/add_patient"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_margin="@dimen/_12sdp"
+            android:background="@drawable/chat_background_input"
+            android:hint="@string/name"
+            android:inputType="textCapSentences"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:text="@{patient.name != null ? patient.name : null}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_15ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/blood_type"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toTopOf="@id/bloodType"
+            app:layout_constraintEnd_toEndOf="@id/bloodType"
+            app:layout_constraintStart_toStartOf="@id/bloodType" />
+
+        <EditText
+            android:id="@+id/bloodType"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:background="@drawable/pharmacy_new_background_input"
+            android:gravity="center"
+            android:inputType="text"
+            android:padding="@dimen/_8sdp"
+            android:text="@{patient.bloodType != null ? patient.bloodType : null}"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/room"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/room"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toTopOf="@id/room"
+            app:layout_constraintEnd_toEndOf="@id/room"
+            app:layout_constraintStart_toStartOf="@id/room" />
+
+        <EditText
+            android:id="@+id/room"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:background="@drawable/pharmacy_new_background_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp"
+            android:text="@{patient.roomNumber != null ? patient.roomNumber : null}"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/bloodType"
+            app:layout_constraintTop_toBottomOf="@id/name" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/weight"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toTopOf="@id/weight"
+            app:layout_constraintEnd_toEndOf="@id/weight"
+            app:layout_constraintStart_toStartOf="@id/weight" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:background="@drawable/pharmacy_new_background_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp"
+            android:text="@{patient.weight != 0 ? Integer.toString(patient.weight) : null}"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@id/height"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bloodType" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:text="@string/height"
+            android:textColor="@color/pink"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintBottom_toTopOf="@id/height"
+            app:layout_constraintEnd_toEndOf="@id/height"
+            app:layout_constraintStart_toStartOf="@id/height" />
+
+        <EditText
+            android:id="@+id/height"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:background="@drawable/pharmacy_new_background_input"
+            android:gravity="center"
+            android:inputType="number"
+            android:padding="@dimen/_8sdp"
+            android:text="@{patient.height != 0 ? Integer.toString(patient.height) : null}"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/weight"
+            app:layout_constraintTop_toBottomOf="@id/room" />
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/chat_background_input"
+            android:hint="@string/address"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="@{patient.address != null ? patient.address : null}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/weight" />
+
+        <EditText
+            android:id="@+id/phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/chat_background_input"
+            android:hint="@string/phone_number"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="@{patient.phoneNumber != null ? patient.phoneNumber : null}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/address" />
+
+        <EditText
+            android:id="@+id/JMBG"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:background="@drawable/chat_background_input"
+            android:hint="@string/jmbg"
+            android:paddingStart="@dimen/_12sdp"
+            android:text="@{patient.JMBG != null ? patient.JMBG : null}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:textSize="@dimen/_13ssp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/phoneNumber" />
+
+        <ToggleButton
+            android:checked="true"
+            android:id="@+id/gender"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_32sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@color/blue"
+            android:drawableLeft="@drawable/ic_male"
+            android:drawableTint="@color/white"
+            android:paddingStart="@dimen/_8sdp"
+            android:paddingEnd="@dimen/_8sdp"
+            android:textColor="@color/white"
+            android:textOff="@string/female"
+            android:textOn="@string/male"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintStart_toStartOf="@+id/JMBG"
+            app:layout_constraintTop_toBottomOf="@+id/JMBG" />
+
+        <ImageButton
+            android:id="@+id/uploadButton"
+            android:layout_width="@dimen/_48sdp"
+            android:layout_height="@dimen/_48sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/ic_cloud_upload"
+            android:backgroundTint="@color/pink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+        <TextView
+            android:id="@+id/tvUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/upload_word_document"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_11ssp"
+            app:layout_constraintEnd_toEndOf="@+id/uploadButton"
+            app:layout_constraintStart_toStartOf="@+id/uploadButton"
+            app:layout_constraintTop_toBottomOf="@+id/uploadButton" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
