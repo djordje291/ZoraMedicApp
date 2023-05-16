@@ -61,38 +61,35 @@ public class PatientsActivity extends InternetActivity implements SearchView.OnQ
 
         databaseViewModel = new ViewModelProvider(this).get(DatabaseViewModel.class);
 
-        databaseViewModel.getPatientList().observe(this, new Observer<List<Patient>>() {
-            @Override
-            public void onChanged(List<Patient> patients) {
-                if (!patients.isEmpty()) {
-                    if (!patientList.isEmpty()) {
-                        patientList.clear();
-                    }
-                    binding.emptyPatients.setVisibility(View.GONE);
-
-                    patientList.addAll(patients);
-
-                    LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
-                    binding.recyclerViewPatients.setLayoutManager(layoutManager);
-
-                    patientsHomeAdapter = new PatientsHomeAdapter(PatientsActivity.this, patientList, databaseViewModel, binding.conView);
-                    patientsHomeAdapter.saveFullPatientList();
-                    binding.recyclerViewPatients.setAdapter(patientsHomeAdapter);
-                    loading(false);
-                    patientsHomeAdapter.notifyDataSetChanged();
-
-                    if (UserMe.getInstance().getClearanceLvl() > 0) {
-                        ItemTouchHelper.Callback callback = new SwipeToDeleteAndEditCallback(getApplicationContext(),
-                                patientsHomeAdapter, PatientsActivity.this, null);
-                        ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
-                        itemTouchHelper.attachToRecyclerView(binding.recyclerViewPatients);
-                    }
-                } else {
+        databaseViewModel.getPatientList().observe(this, patients -> {
+            if (!patients.isEmpty()) {
+                if (!patientList.isEmpty()) {
                     patientList.clear();
-                    new Sleeper(binding.emptyPatients, binding.loading, patients, patientList).start();
-                    if (binding.recyclerViewPatients.getAdapter() != null) {
-                        binding.recyclerViewPatients.getAdapter().notifyDataSetChanged();
-                    }
+                }
+                binding.emptyPatients.setVisibility(View.GONE);
+
+                patientList.addAll(patients);
+
+                LinearLayoutManager layoutManager = new LinearLayoutManager(getApplicationContext());
+                binding.recyclerViewPatients.setLayoutManager(layoutManager);
+
+                patientsHomeAdapter = new PatientsHomeAdapter(PatientsActivity.this, patientList, databaseViewModel, binding.conView);
+                patientsHomeAdapter.saveFullPatientList();
+                binding.recyclerViewPatients.setAdapter(patientsHomeAdapter);
+                loading(false);
+                patientsHomeAdapter.notifyDataSetChanged();
+
+                if (UserMe.getInstance().getClearanceLvl() > 0) {
+                    ItemTouchHelper.Callback callback = new SwipeToDeleteAndEditCallback(getApplicationContext(),
+                            patientsHomeAdapter, PatientsActivity.this, null);
+                    ItemTouchHelper itemTouchHelper = new ItemTouchHelper(callback);
+                    itemTouchHelper.attachToRecyclerView(binding.recyclerViewPatients);
+                }
+            } else {
+                patientList.clear();
+                new Sleeper(binding.emptyPatients, binding.loading, patients, patientList).start();
+                if (binding.recyclerViewPatients.getAdapter() != null) {
+                    binding.recyclerViewPatients.getAdapter().notifyDataSetChanged();
                 }
             }
         });

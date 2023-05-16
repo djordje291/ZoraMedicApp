@@ -67,6 +67,12 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class FirebaseRepository {
+    //TODO: make it a singleton
+    //TODO: in constructor dont get always firebaseAuth
+    //TODO: make it return MutableLiveData, but in ViewModel make it return LiveData
+    //TODO: get recyclerView init out from observe
+    //TODO: change instanciation of ViewModels to right if it is
+    //TODO: create a MutableLiveData<Boolean> isUpdating so you can see if it is updating
 
     private Application application;
     private FirebaseAuth firebaseAuth;
