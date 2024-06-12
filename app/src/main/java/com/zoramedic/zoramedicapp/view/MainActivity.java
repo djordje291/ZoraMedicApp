@@ -18,7 +18,7 @@ import com.zoramedic.zoramedicapp.databinding.ActivityMainBinding;
 import com.zoramedic.zoramedicapp.viewmodel.LoginViewModel;
 
 public class MainActivity extends AppCompatActivity {
-
+    //testCommit
     private ActivityMainBinding binding;
 
     private LoginViewModel loginViewModel;
